@@ -78,6 +78,130 @@ body {
   text-align: left;
   background-color: #fff;
 }
+#mainNav {
+    font-family: 'Notable', sans-serif;
+}
+#about h2 {
+    font-family: 'Notable', sans-serif;
+}
+#projects h4 {
+    font-family: 'Notable', sans-serif;
+}
+#pricing h2 {
+    font-family: 'Notable', sans-serif;
+}
+#gallery-box h4 {
+    font-family: 'Notable', sans-serif;
+}
+#gallery hr {
+    border-color: #818887;
+    border-width: 0.25rem;
+    width: 30%;
+}
+/*---------------------------------------Gallery Carousel*/
+#gallery {
+    padding-bottom: 5rem;
+}
+
+.section-header {
+    font-family: 'Notable', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3.5rem; 
+}
+
+
+/*---------------------------------------Prices Section*/
+.Card-Container {
+    padding: 0;
+}
+.Pricing-section {
+    padding-bottom: 5rem;
+
+}
+.card-deck {
+    justify-content: space-evenly;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.card {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    max-width: 280px;
+}
+.card-title {
+    display: flex;
+    font-family: 'notable', sans-serif;
+    color: #ffffff;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    
+    
+}
+.card-footer {
+    text-align: center;
+}
+#pricing-section-header {
+    justify-content: center;
+}
+
+.pricing-row {
+    width: 100%;
+    display: inline-block;
+
+}
+
+.pricing-items {
+    padding-top: 50px;
+    float: none;
+    padding-right: 0;
+}
+
+.subheader-box {
+    height: 80px;
+    background-color: #333333;
+    
+}
+.pricing-box h3 {
+    font-family: 'Notable', sans-serif;
+    color: #fafafa;
+    background-color: #000000;
+    margin: 0;
+    text-align: center;
+    height: 100%;
+    padding-top:30px;
+}
+
+.pricing-box {
+    
+    font-weight: lighter;
+    font-size: 16pt;
+    letter-spacing: 0.75px;
+    display: inline-block;
+    border:#1b1c1b;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0;
+    margin-left: 4.5%;
+}
+
+.card-body ul {
+    height: 60%;
+    line-height: 45px;
+    text-align:center;
+    padding-top: 0;
+    padding-left:0;
+    margin-bottom: 0;
+}
+
+.card-body ul li {
+    padding-left: 7px;
+    list-style: none;
+}
+
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -169,12 +293,12 @@ sup {
 }
 
 a {
-  color: #64a19d;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #467370;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -436,7 +560,7 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size: 70%;
   font-weight: 400;
 }
 
@@ -546,6 +670,10 @@ pre code {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
+}
+#contact-box {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .container {
@@ -5958,6 +6086,7 @@ a.close.disabled {
 }
 
 .carousel-inner {
+
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -9934,7 +10063,7 @@ button.bg-black:focus {
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #000 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10209,15 +10338,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #818887;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #818887;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #818887;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #818887;
   }
 }
 
@@ -10245,10 +10374,10 @@ body {
 }
 .masthead h1 {
   font-family: "Notable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -10288,7 +10417,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10296,7 +10425,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #818887;
   }
 }
 .projects-section .project-text {
@@ -10308,7 +10437,7 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #818887;
     border-width: 0.25rem;
     width: 30%;
   }
@@ -10338,7 +10467,7 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid grey;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
@@ -10347,7 +10476,7 @@ body {
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #000000;
   border-width: 0.25rem;
   width: 3rem;
 }
