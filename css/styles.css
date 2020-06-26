@@ -710,6 +710,8 @@ pre code {
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  justify-content:space-evenly;
 }
 
 @media (min-width: 576px) {
@@ -10283,8 +10285,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #000000;
+  border: 1px solid #000000;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -10412,12 +10414,22 @@ body {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
+@media (max-width: 420px) {
+.about-section {
+    padding-top: 0;
+}
+#pricing h2 {
+  font-size: 24px;
+}
+
+}
+
 .about-section p {
   margin-bottom: 5rem;
 }
 
 .projects-section {
-  padding: 5rem;
+  padding: 1rem;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10468,6 +10480,7 @@ body {
 .contact-section .card {
   border: 0;
   border-bottom: 0.25rem solid grey;
+  margin: 2em;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
@@ -10481,7 +10494,7 @@ body {
   width: 3rem;
 }
 .contact-section .social {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .contact-section .social a {
   text-align: center;
