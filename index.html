@@ -175,6 +175,9 @@ All classes are open to all and scaled for the individual as necessary.
       </div>
     </section>
     <!-- Gallery-->
+
+    <div id="instafeed"></div>
+    
     <section id="gallery" class="bg-light">
       <div class="container" id="gallery-box">
         <div class="row no-gutters mb-5 mb-lg-0">
@@ -354,7 +357,7 @@ All classes are open to all and scaled for the individual as necessary.
               <h5 class="card-title">Foundation</h5>
               <div class="card-body">
                 <ul class="card-text">
-                  <li>5 x 1-to-1 sessions</li>
+                  <li>5 hours 1-to-1</li>
                   <li>Fitness assessment</li>
                   <li>Fundamental skills</li>
                   <li><strong>£125</strong></li>
@@ -376,7 +379,7 @@ All classes are open to all and scaled for the individual as necessary.
               <h5 class="card-title">Unlimited</h5>
               <div class="card-body">
                 <ul class="card-text">
-                  <li>Unlimited sessions</li>
+                  <li>Unlimited sessions per month</li>
                   <li>No fixed contract</li>
                   <li>Online Booking System</li>
                   <li><strong>£95</strong></li>
@@ -467,5 +470,13 @@ All classes are open to all and scaled for the individual as necessary.
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- Instafeed JS-->
+    <script src="js/instafeed.js"></script>
+    <script type="text/javascript">
+    var feed = new Instafeed({
+      accessToken: 'your-token'
+    });
+    feed.run();
+    </script>
   </body>
 </html>
